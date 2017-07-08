@@ -1,13 +1,107 @@
 body {
-  color: grey;
-  background-color: antiquewhite; }
+  margin: 0; }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  nav ul li {
-    display: inline-block; }
-    nav ul li a {
-      color: aqua;
-      font-size: 22px; }
+header {
+  padding-top: 2%;
+  background-image: url(../grafika-landing-finanse/background.png);
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  color: white;
+  font-family: "Open Sans", sans-serif; }
+  header .fa-university {
+    color: #ecd407;
+    font-size: 3em;
+    padding-left: 10%; }
+  header .fa-phone {
+    font-size: 3em;
+    padding-left: 50%;
+    display: inline; }
+  header h1 {
+    font-size: 3em;
+    display: inline; }
+  header div.header-right {
+    display: inline-block;
+    width: 10%;
+    height: 5%;
+    text-align: center; }
+  header span {
+    font-size: 1.5em; }
+
+h2,
+span {
+  font-family: "Open Sans", sans-serif; }
+
+section {
+  position: absolute;
+  top: 26%;
+  left: 70%;
+  color: #ecd407;
+  height: 30vh;
+  width: 21vw; }
+  section span {
+    color: white; }
+  section h3 {
+    font-size: 1.25em; }
+  section form {
+    padding: 10px;
+    background-color: #001d8a; }
+  section input[type='text'],
+  section input[type='tel'],
+  section input[type='email'] {
+    padding: 5px;
+    width: 90%;
+    border: 5px solid white; }
+  section textarea {
+    width: 90%;
+    padding: 5px;
+    border: 5px solid white; }
+  section input[type='submit'] {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #ecd407;
+    border-style: none; }
+
+footer {
+  background-color: #292929; }
+  footer div.znaczki {
+    position: relative;
+    padding-top: 50px;
+    height: 20vh; }
+    footer div.znaczki div.znaczek1 {
+      left: 33%;
+      position: absolute;
+      text-align: center; }
+      footer div.znaczki div.znaczek1 .fa-phone {
+        text-align: center;
+        color: black;
+        background-color: #ecd407;
+        font-size: 2em;
+        height: 60px;
+        width: 60px;
+        line-height: 60px; }
+    footer div.znaczki div.znaczek2 {
+      left: 66%;
+      position: absolute;
+      text-align: center; }
+      footer div.znaczki div.znaczek2 .fa-envelope {
+        text-align: center;
+        color: black;
+        background-color: #ecd407;
+        font-size: 2em;
+        height: 60px;
+        width: 60px;
+        line-height: 60px; }
+    footer div.znaczki h3 {
+      text-align: center;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9em; }
+  footer p {
+    color: white;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    margin: 0; }

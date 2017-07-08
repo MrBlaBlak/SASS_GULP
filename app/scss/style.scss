@@ -1,23 +1,131 @@
-@import "zmienna";
-@mixin menu-nawigacyjne{
-    color: aqua;
-    font-size: 22px;
-}
-body {
-    color: $base-color;
-    background-color: $bg-color;
-}
-
-nav {
-    ul {
+    @import "zmienna";
+    body {
         margin: 0;
-        padding: 0;
-        list-style: none;
-        li {
+    }
+    
+    header {
+        padding-top: 2%;
+        background-image: url(../grafika-landing-finanse/background.png);
+        height: 90vh;
+        position: relative;
+        background-size: cover;
+        color: white;
+        font-family: $font;
+        .fa-university {
+            color: $yellow;
+            font-size: 3em;
+            padding-left: 10%;
+        }
+        .fa-phone {
+            font-size: 3em;
+            padding-left: 50%;
+            display: inline;
+        }
+        h1 {
+            font-size: 3em;
+            display: inline;
+        }
+        div.header-right {
             display: inline-block;
-            a {
-                @include menu-nawigacyjne;
-            }
+            width: 10%;
+            height: 5%;
+            text-align: center;
+        }
+        span {
+            font-size: 1.5em;
         }
     }
-}
+    
+    h2,
+    span {
+        font-family: $font;
+    }
+    
+    section {
+        position: absolute;
+        top: 26%;
+        left: 70%;
+        color: $yellow;
+        height: 30vh;
+        width: 21vw;
+        span {
+            color: white;
+        }
+        h3 {
+            font-size: 1.25em;
+        }
+        form {
+            padding: 10px;
+            background-color: $blue;
+        }
+        input[type='text'],
+        input[type='tel'],
+        input[type='email'] {
+            padding: 5px;
+            width: 90%;
+            border: 5px solid white;
+        }
+        textarea {
+            width: 90%;
+            padding: 5px;
+            border: 5px solid white;
+        }
+        input[type='submit'] {
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            background-color: $yellow;
+            border-style: none;
+        }
+    }
+    
+    footer {
+        background-color: $grey;
+        div.znaczki {
+            position: relative;
+            padding-top: 50px;
+            height: 20vh;
+            div.znaczek1 {
+                left: 33%;
+                position: absolute;
+                text-align: center;
+                .fa-phone {
+                    text-align: center;
+                    color: black;
+                    background-color: $yellow;
+                    font-size: 2em;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
+                }
+            }
+            div.znaczek2 {
+                left: 66%;
+                position: absolute;
+                text-align: center;
+                .fa-envelope {
+                    text-align: center;
+                    color: black;
+                    background-color: $yellow;
+                    font-size: 2em;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
+                }
+            }
+            h3 {
+                text-align: center;
+                color: white;
+                font-family: $font;
+                font-size: 0.9em;
+            }
+        }
+        p {
+            color: white;
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 5%;
+            margin: 0;
+        }
+    }
